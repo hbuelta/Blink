@@ -31,13 +31,12 @@
 
 uint8_t myLED;
 
-//
-// Brief	Setup
-// Details	Define the pin the LED is connected to
-//
-// Add setup code
-
-void setup() {
+/**
+	Define the pin the LED is connected to
+	@param  none
+ */
+void setup()
+ {
   // myLED pin number (13 on most arduino boards)
 
     myLED = 13;
@@ -46,12 +45,15 @@ void setup() {
     
 }
 
-//
-// Brief	Loop
-// Details	Blink the LED
-//
-// Add loop code 
+
+
+/**
+	Blinks the led
+	@param  none
+ */
+
 void loop() {
+
     digitalWrite(myLED, HIGH);
     delay(500);
     digitalWrite(myLED, LOW);
