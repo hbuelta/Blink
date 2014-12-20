@@ -8,7 +8,7 @@
 // 				Hector Buelta
 //
 // Date			15/12/14 23:12
-// Version		<#version#>
+// Version		0.1
 // 
 // Copyright	© Hector Buelta, 2014
 // Licence		<#license#>
@@ -49,14 +49,15 @@
 // Brief	Name of the LED
 // Details	Each board has a LED but connected to a different pin
 //
-uint8_t myLED;
 
+uint8_t myLED;
 
 //
 // Brief	Setup
 // Details	Define the pin the LED is connected to
 //
-// Add setup code 
+// Add setup code
+
 void setup() {
   // myLED pin number
 #if defined(ENERGIA) // All LaunchPads supported by Energia
@@ -74,6 +75,7 @@ void setup() {
 #endif
 
     pinMode(myLED, OUTPUT);
+    
 }
 
 //
